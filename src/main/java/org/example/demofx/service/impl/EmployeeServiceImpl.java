@@ -11,6 +11,8 @@ public class EmployeeServiceImpl implements EmployeeService {
     public boolean saveEmployee(EmployeeDto employeeDto) {
         Database.employees.add(new Employee(employeeDto.getId(), employeeDto.getName(),
                 employeeDto.getAddress(), employeeDto.getPosition()));
+        System.out.println("Hi...");
         return true;
+
     }
 }
